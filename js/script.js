@@ -5,7 +5,7 @@
 
 // Chiedo all'utente di inserire una parola
 var parolaUtente = prompt('Inserisci una parola che comincia con una lettera minuscola e ti dirò se è un palindromo');
-
+parolaUtente = parolaUtente.toUpperCase();
 
 // Creo la funzione
 
