@@ -4,7 +4,8 @@
 // Creare una funzione per capire se la parola inserita è palindroma
 
 // Chiedo all'utente di inserire una parola
-var parolaUtente = prompt('Inserisci una parola');
+var parolaUtente = prompt('Inserisci una parola che comincia con una lettera minuscola e ti dirò se è un palindromo');
+
 
 // Creo la funzione
 
@@ -15,7 +16,7 @@ var parolaUtente = prompt('Inserisci una parola');
 // Se la parola è uguale a sé stessa letta al contrario --> return -> la tua parola è un palindromo
 function trovaPalindromo (paroladaEsaminare) {
     var parolaAlContrario = "";
-    for ( var i = paroladaEsaminare.length - 1; i > 0; i-- ) {
+    for ( var i = paroladaEsaminare.length - 1; i >= 0; i-- ) {
         parolaAlContrario += paroladaEsaminare.charAt(i);
     }
 
